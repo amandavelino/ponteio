@@ -1,0 +1,23 @@
+//sass imports
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/transition";
+@import "susy";
+@import "breakpoint";
+@import "compass/css3/user-interface";
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transform";
+@import "compass/css3/border-radius";
+
+//Fonts 
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+//Core partials
+@import "variables";
+@import "mixins";
+@import "ie";
+@import "layout";
+
+//Core modules - sessoes/paginas do site
+@import "modules/home";

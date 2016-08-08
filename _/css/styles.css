@@ -1,0 +1,487 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+/* line 5, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../components/sass/_ie.scss */
+.browsehappy {
+  width: 45%;
+  padding: 2.5%;
+  margin: 5% auto;
+  text-align: justify;
+}
+/* line 9, ../components/sass/_ie.scss */
+.browsehappy a {
+  color: #990000;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'arima_maduraiextrabold';
+  src: url("../fonts/arimamadurai-extrabold-webfont.woff2") format("woff2"), url("../fonts/arimamadurai-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'inknut_antiquaextrabold';
+  src: url("../fonts/inknutantiqua-extrabold-webfont.woff2") format("woff2"), url("../fonts/inknutantiqua-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'inknut_antiqualight';
+  src: url("../fonts/inknutantiqua-light-webfont.woff2") format("woff2"), url("../fonts/inknutantiqua-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 25, ../components/sass/_layout.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 31, ../components/sass/_layout.scss */
+body {
+  font-size: 10px;
+  font-family: "inknut_antiqualight", Arial, sans-serif;
+  line-height: 1em;
+}
+
+/* line 38, ../components/sass/_layout.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 30px;
+  line-height: 1em;
+  margin: 0;
+}
+
+/* line 44, ../components/sass/_layout.scss */
+p {
+  font-size: 12px;
+  font-size: 1.2em;
+  line-height: 1em;
+  margin: 0 0 1em;
+}
+
+/* line 1, ../components/sass/modules/_home.scss */
+#home {
+  background: url("../imgs/bgHome.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* Menu ativo */
+}
+/* line 10, ../components/sass/modules/_home.scss */
+#home:before {
+  background: url("../imgs/pattern_home.png") repeat center center;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+}
+/* line 20, ../components/sass/modules/_home.scss */
+#home:after {
+  background: #000;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 31, ../components/sass/modules/_home.scss */
+#home #sqr {
+  background: #000;
+  width: 215px;
+  height: 215px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  margin-top: -107px;
+  margin-left: -107px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 49, ../components/sass/modules/_home.scss */
+#home #boxLogo {
+  width: 305px;
+  height: 305px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 60;
+  margin-top: -152px;
+  margin-left: -152px;
+}
+/* line 62, ../components/sass/modules/_home.scss */
+#home #logo {
+  background: url("../imgs/ponteio.png") no-repeat center center;
+  width: 195px;
+  height: 60px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  z-index: 50;
+  margin-top: -30px;
+  margin-left: -97px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 77, ../components/sass/modules/_home.scss */
+#home #icon-menu {
+  background: url("../imgs/icon_menu.png") no-repeat center center;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 50;
+  margin-top: -17px;
+  margin-left: -17px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 91, ../components/sass/modules/_home.scss */
+#home #icon-menu:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 96, ../components/sass/modules/_home.scss */
+#home #icon-menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+}
+/* line 106, ../components/sass/modules/_home.scss */
+#home #redes-sociais {
+  position: absolute;
+  top: 82px;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -50px;
+  z-index: 40;
+  width: 100px;
+}
+/* line 116, ../components/sass/modules/_home.scss */
+#home #redes-sociais li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 125, ../components/sass/modules/_home.scss */
+#home #redes-sociais li:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 130, ../components/sass/modules/_home.scss */
+#home #redes-sociais li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 136, ../components/sass/modules/_home.scss */
+#home #redes-sociais li a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 144, ../components/sass/modules/_home.scss */
+#home #redes-sociais li:last-child {
+  margin-right: 0;
+}
+/* line 153, ../components/sass/modules/_home.scss */
+#home #info-fone-rodape {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 60px;
+  z-index: 20;
+  text-align: center;
+}
+/* line 162, ../components/sass/modules/_home.scss */
+#home #info-fone-rodape p {
+  color: #fff;
+  font-family: "arima_maduraiextrabold", sans-serif;
+  font-size: 18px;
+  line-height: 1em;
+  margin: 0;
+}
+/* line 170, ../components/sass/modules/_home.scss */
+#home #info-fone-rodape p span {
+  background: #a6171c;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 4px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 186, ../components/sass/modules/_home.scss */
+#home #logo-menu {
+  background: url("../imgs/ponteio.png") no-repeat center center;
+  display: none;
+  width: 195px;
+  height: 60px;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  z-index: 50;
+  margin-top: -30px;
+  margin-left: -97px;
+  z-index: 70;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 203, ../components/sass/modules/_home.scss */
+#home #logo-menu.show {
+  top: 10%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 211, ../components/sass/modules/_home.scss */
+#home #close {
+  background: url("../imgs/icon-close.png") no-repeat center center;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  margin-left: -16px;
+  margin-top: -16px;
+  z-index: 70;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+/* line 226, ../components/sass/modules/_home.scss */
+#home #close.show {
+  top: 18%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 234, ../components/sass/modules/_home.scss */
+#home #menu {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  z-index: 0;
+  font-family: "inknut_antiquaextrabold", sans-serif;
+  display: none;
+}
+/* line 244, ../components/sass/modules/_home.scss */
+#home #menu li {
+  position: relative;
+  display: block;
+  width: auto;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 252, ../components/sass/modules/_home.scss */
+#home #menu li a {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1em;
+  position: relative;
+  padding: 2% 0;
+}
+/* line 265, ../components/sass/modules/_home.scss */
+#home #menu li a:before {
+  background: #a6171c;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  z-index: 20;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 281, ../components/sass/modules/_home.scss */
+#home #menu li a:after {
+  content: "";
+  background: #fff;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 10;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 296, ../components/sass/modules/_home.scss */
+#home #menu li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* line 305, ../components/sass/modules/_home.scss */
+#home #menu li.id-1 {
+  margin-left: -2%;
+}
+/* line 310, ../components/sass/modules/_home.scss */
+#home #menu li.id-2 {
+  margin-left: -2.5%;
+}
+/* line 315, ../components/sass/modules/_home.scss */
+#home #menu li.id-3 {
+  margin-left: -3%;
+}
+/* line 320, ../components/sass/modules/_home.scss */
+#home #menu li.id-4 {
+  margin-left: -3.5%;
+}
+/* line 325, ../components/sass/modules/_home.scss */
+#home #menu li.id-5 {
+  margin-left: -4%;
+}
+/* line 330, ../components/sass/modules/_home.scss */
+#home #menu li.id-6 {
+  margin-left: -4.5%;
+}
+/* line 334, ../components/sass/modules/_home.scss */
+#home #menu li.show {
+  margin-left: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 343, ../components/sass/modules/_home.scss */
+#home #menu li:last-child a:before {
+  display: none;
+}
+/* line 351, ../components/sass/modules/_home.scss */
+#home #menu.show {
+  display: block;
+  z-index: 90;
+}
+/* line 363, ../components/sass/modules/_home.scss */
+#home.opened #sqr {
+  width: 3840px;
+  height: 3840px;
+  margin-top: -1920px;
+  margin-left: -1920px;
+}
+/* line 371, ../components/sass/modules/_home.scss */
+#home.opened #logo {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  top: 35%;
+}
+/* line 377, ../components/sass/modules/_home.scss */
+#home.opened #icon-menu {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  bottom: 70px;
+}
+
+/*# sourceMappingURL=styles.css.map */
