@@ -1,6 +1,27 @@
 //importando jquery como dependencia
 $(document).ready(function(){
+
+	//setTimeout(function(){$(".pre-con").hide()},1100);
 	
+
+
+	//ao clicar em has-submenu
+	$("li.has-submenu > a").click(function(){
+
+		if(!$(this).parent().hasClass('clicked')){
+			$('.link-ativo').removeClass('link-ativo');
+			$('.clicked').removeClass('clicked');
+			$(this).addClass('link-ativo');
+			$(this).parent().addClass('clicked').css({'z-index':'0'});
+		}else{
+			$('.link-ativo').removeClass('link-ativo');
+			$('.clicked').css({'z-index':'-10'}).removeClass('clicked');
+		}
+
+		return false;
+
+	});
+
 	var home 	= $("#home"),
 	logoMenu 	= $("#logo-menu"),
 	close 		= $("#close"),
@@ -33,7 +54,8 @@ $(document).ready(function(){
 		//depois q o menu desaparecer
 		window.setTimeout(function(){
 			//espera 1 segundo aparecer a logo menu
-			logoMenu.css({'display':'block'}).addClass('show');
+			//logoMenu.css({'z-index':'60'});
+			logoMenu.addClass('show');
 			close.addClass('show');
 			menu.addClass('show');
 		}, 600);
@@ -68,6 +90,9 @@ $(document).ready(function(){
 
 	close.click(function(){
 
+		$('.link-ativo').removeClass('link-ativo');
+		$('.clicked').removeClass('clicked');
+
 		window.setTimeout(function(){
 			menu.find("li:nth-child(6)").removeClass('show');
 		},  0);	
@@ -95,7 +120,7 @@ $(document).ready(function(){
 		//depois q o menu desaparecer
 		window.setTimeout(function(){
 			//espera 1 segundo aparecer a logo menu
-			logoMenu.removeClass('show').css({'display':'none'});
+			logoMenu.removeClass('show');
 			close.removeClass('show');
 			menu.removeClass('show');
 		}, 300);
@@ -107,4 +132,30 @@ $(document).ready(function(){
 		return false;
 	});
 
+
+	//O Restaurante
+	$('.owl-carousel').owlCarousel({
+		autoPlay: true,
+		navigation : false, // Show next and prev buttons
+		loop: true,
+		items: 1,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true,
+		transitionStyle : "fade"
+	});
+
 });//
+
+jQuery(window).load(function () {
+
+	//setTimeout(function(){
+
+		$("#boxLogo").addClass('loaded');
+
+	//}, 1000);
+
+	//loader para o site
+    //$("#loader").delay(1500).fadeOut("slow"); //retire o delay quando for copiar!
+    //$(".wrap").fadeIn(450);
+});

@@ -1,10 +1,49 @@
 //fontes
-$font-main: 'inknut_antiqualight', Arial, sans-serif;
-$font-heading: 'arima_maduraiextrabold', sans-serif;
-$font-heading-bold: 'inknut_antiquaextrabold', sans-serif;
+$font-main: 'Arima Madurai', cursive;
+$font-heading: 'Inknut Antiqua', serif;
 $font-size-base: 10px;
 
 //cores
 $color-red: #a6171c;
 $color-main: #333;
 $color-white: #fff;
+
+//forms
+$color-input: #555;
+$color-placeholder: #b3b3b3;
+
+//mobile resolucoes
+$desktop-land: 1200px;
+$desktop-port: 992px;
+$tablet-land: 959px;
+$tablet-port: 768px;
+$cell-land: 480px;
+$cell-port: 320px;
+
+//susy
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  container: 1200px,
+  container-position: center,
+  columns: 10,
+  gutters: 10,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);

@@ -11,7 +11,8 @@
 @import "compass/css3/border-radius";
 
 //Fonts 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Inknut+Antiqua:300,700);
+@import url(https://fonts.googleapis.com/css?family=Arima+Madurai:700);
 
 //Core partials
 @import "variables";
@@ -21,3 +22,4 @@
 
 //Core modules - sessoes/paginas do site
 @import "modules/home";
+@import "modules/localizacao";
