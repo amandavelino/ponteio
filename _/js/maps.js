@@ -6,22 +6,24 @@ var map;
 
 		var marker 				= new google.maps.Marker({
 
-			title: 				'Reserve Hotel',
+			title: 				'O Ponteio',
 			icon: 				'imgs/icon-mapa.png',
-			position: 			new google.maps.LatLng('-7.848020', '-35.757736') // -7.848020, -35.757736
+			position: 			new google.maps.LatLng('-8.131386', '-34.902825') // -8.131386, -34.902825
 
 		});		
 		 
 		function initialize() {
 
 				directionsDisplay = new google.maps.DirectionsRenderer(); // Instanciando...
-				var latlng = new google.maps.LatLng('-7.848020', '-35.757736');
+				var latlng = new google.maps.LatLng('-8.131386', '-34.902825');
 
 				var options = {
 
 					zoom: 16,
 					center: marker.position,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					draggable: !("ontouchend" in document),
+					styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
 
 				};
 
@@ -30,7 +32,7 @@ var map;
 				marker.setMap(map);
 					
 				google.maps.event.addListener(marker, 'click', function() {
-					info.setContent('<p class="maps"><strong>Reserve Hotel</strong> <br> Avenida Senador Paulo Guerra, 247<br> Santo AntÃ´nio - Surubim - PE<br> CEP: 55750-000</p>');
+					info.setContent('<p class="maps"><strong>Restaurante O Ponteio</strong> <br> Rua Visconde de Jequitinhonha, 110-174<br> Boa Viagem, Recife - PE</p>');
 					info.open(map, marker);
 				}); 
 

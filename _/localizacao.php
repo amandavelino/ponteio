@@ -5,7 +5,7 @@
         <?php include("incs/css.php"); ?>
     </head>
 
-    <body id="home-page">
+    <body>
 
         <?php include("incs/ie.php"); ?>
 
@@ -15,9 +15,18 @@
             
             <section id="internas" class="logo-ctr">
 
+                <div id="boxLogo">
+
+                    <div id="logo"></div><!-- logo -->
+                    <div id="icon-menu">
+                        <a href="#">Icon Menu</a>
+                    </div><!-- icon-menu -->
+
+                </div><!-- boxLogo -->
+
                 <div id="ext-mapa">
                     <div id="mapa"></div><!-- mapa -->
-                    <form id="form-localizacao" method="post" action="index.html">
+                    <form id="form-localizacao" method="post" action="#" autocomplete="off">
             
                         <div class="container">
                                 <fieldset>                                

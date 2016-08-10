@@ -5,7 +5,7 @@
         <?php include("incs/css.php"); ?>
     </head>
 
-    <body id="home-page">
+    <body>
 
         <?php include("incs/ie.php"); ?>
 

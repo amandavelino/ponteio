@@ -1,0 +1,244 @@
+.formulario 
+{
+	width: 670px;
+	margin: 0 auto;
+
+	fieldset
+	{
+
+		width: 100%;
+		margin-bottom: 25px;
+		float: left;
+
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		label 
+		{
+			display: block;
+			width: 100%;
+
+			&.columns-2
+			{
+				width: 50%;
+				float: left;
+
+				.lft,
+				.rgt 
+				{
+					width: 93%;
+					padding: 2%;
+				}
+
+				.lft 
+				{
+					float: left;
+				}
+
+				.rgt 
+				{
+					float: right;
+				}
+
+			}
+
+			&.columns-3
+			{
+				width: 33%;
+				float: left;
+
+				.outer-select
+				{
+					width: 95%;
+					float: right;
+				}
+
+				.lft,
+				.rgt,
+				.ctr 
+				{
+					width: 93%;
+					padding: 2%;
+				}
+
+				.lft 
+				{
+					float: left;
+				}
+
+				.rgt 
+				{
+					float: right;
+				}
+
+				.ctr 
+				{
+					margin:0 auto;
+				}
+
+			}
+
+			.input 
+			{
+				background: transparent;
+				border: 0 none;
+				border-left: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+				color: #fff;
+				font-family: $font-main;
+				font-size: $font-size-base * 1.6;
+				width: 97.5%;
+				padding: 1%;
+
+
+				@include input-placeholder
+				{
+					color: #fff !important;
+					font-family: $font-main;
+					font-size: $font-size-base * 1.6;
+					@include opacity(.6);
+				}
+
+			}
+
+		}
+
+		.submit 
+		{
+			background: transparent;
+			border: 1px solid #fff;
+			color: #fff;
+			cursor: pointer;
+			font-family: $font-main;
+			font-size: $font-size-base * 1.6;			
+			width: 100%;
+			padding: 1% 1% .8%;
+			@include transition(all .5s ease-out);
+
+			&:hover 
+			{
+				background: rgba(255,255,255,.3);
+			}
+
+		}
+
+	}
+
+}
+
+body 
+{
+
+	.pika-single
+	{
+		background: rgba(0,0,0,0.95);
+		border: 0 none;
+	}
+
+	.pika-label
+	{
+		background: transparent;
+		color: #fff;
+		font-family: $font-main;
+	}
+
+	.pika-table th
+	{
+		color: #fff;
+		font-family: $font-main;	
+	}
+
+	.is-selected .pika-button
+	{
+		background: transparent;
+		color: $color-red;
+		outline: none;
+		border:0 none;
+	}
+
+	.pika-button
+	{
+		background: transparent;
+		color: #fff;
+		font-family: $font-main;
+		outline: none;
+		border:0 none;
+	}
+
+	.is-today .pika-button {
+	    color: $color-red;
+	    background: transparent;
+	    font-weight: bold;
+	}
+
+	.pika-button:hover {
+	    color: $color-red;
+	    background: transparent;
+	    box-shadow: none;
+	    border-radius: 0;
+	}
+
+	//select
+
+	.select
+	{
+		display: none;
+	}
+
+	div.fancy-select
+	{
+		border-bottom: 1px solid #fff;
+		border-left: 1px solid #fff;		
+	}
+
+	div.fancy-select div.trigger {
+		border-radius: 0;
+		cursor: pointer;
+		font-family: $font-main;
+		font-size: $font-size-base * 1.6;
+		padding: 12px 24px 12px 9px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-transform: none;
+		position: relative;
+		background: transparent;
+		border: 0 none;
+		border-top-color: transparent;
+		color: #fff;
+		width: 85%;
+		margin: 0 auto;
+		@include transition(all 240ms ease-in-out);
+
+		&.open {
+		    background: transparent;
+		    border: 0 none;
+		    color: #fff;
+		    box-shadow: none;			
+		}
+
+		&:after 
+		{
+			top: 12px;
+			border-top-color: #fff;
+		}
+		
+	}
+
+	div.fancy-select ul.options
+	{
+		background: #000;
+		background: rgba(0,0,0,.9);
+		border-radius: 0;
+		border: 0 none;
+	}
+
+	div.fancy-select ul.options li
+	{
+		color: #fff;
+		font-family: $font-main;
+	}
+
+}

@@ -1,0 +1,30 @@
+#info-fone-rodape
+{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    z-index: 20;
+    text-align: center;
+
+    p 
+    {
+        color: #fff;
+        font-family: $font-main;
+        font-size: $font-size-base * 1.8;
+        line-height: 1em;
+        margin: 0;
+
+        span 
+        {
+            background: #a6171c;
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            margin: 4px 0;
+            @include border-radius();
+        }
+
+    }
+
+}

@@ -2,8 +2,6 @@
 $(document).ready(function(){
 
 	//setTimeout(function(){$(".pre-con").hide()},1100);
-	
-
 
 	//ao clicar em has-submenu
 	$("li.has-submenu > a").click(function(){
@@ -31,7 +29,7 @@ $(document).ready(function(){
 	
 	function animarLi(id){
 
-		var tempo = 750;
+		var tempo = 700;
 		window.setTimeout(function(){
 			menu.find('li:nth-child(' + id + ')').addClass('show');
 			console.log(tempo);
@@ -150,9 +148,7 @@ $(document).ready(function(){
 jQuery(window).load(function () {
 
 	//setTimeout(function(){
-
-		$("#boxLogo").addClass('loaded');
-
+	$("#boxLogo").addClass('loaded');
 	//}, 1000);
 
 	//loader para o site
