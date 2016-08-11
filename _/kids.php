@@ -15,19 +15,8 @@
             
             <section id="internas" class="logo-lft">
 
-                <div class="lft">
-                  
-                    <div id="owl-demo" class="owl-carousel owl-theme">
-                     
-                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
-                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
-                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
-                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
-                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
-                     
-                    </div>
-
-                </div><!-- lft -->
+                <?php include("incs/menu.php"); ?>
+                <div id="bg-menu-internas"></div><!-- bg-menu-internas -->
 
                 <div class="rgt pdg">
                     
@@ -54,6 +43,20 @@
                     <p>Nosso objetivo é prestar serviços com excelência e qualidade, assim como prezar pela satisfação dos nossos clientes. Por tudo isso, o Ponteio é Simplesmente Irresítivel!</p>
 
                 </div><!-- rgt -->
+
+                <div class="lft">
+                  
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                     
+                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
+                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
+                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
+                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
+                        <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
+                     
+                    </div>
+
+                </div><!-- lft -->
 
             </section><!-- home -->
 

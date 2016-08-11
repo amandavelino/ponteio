@@ -1,0 +1,69 @@
+#internas 
+{
+
+	#bg-menu-internas
+	{
+		background: #000;
+		width: 100%;
+		height: 0%; //0%
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: 60;
+		
+		@include transition(all .35s ease-in-out);
+
+	}
+
+    &.opened 
+    {
+
+        #bg-menu-internas
+        {
+            height: 100%;
+        } 
+
+        &.logo-lft 
+        {
+        	#boxLogo
+        	{
+
+                #logo 
+                {
+                    margin-left: -120px;
+                    @include opacity(0);                    
+                }
+
+                #icon-menu
+                {
+                    margin-left: -37px;
+                    @include opacity(0);                      
+                }
+            }
+
+        }  
+           
+        &.logo-ctr 
+        {
+            #boxLogo
+            {
+
+                #logo 
+                {
+                    top: 25%;
+                    @include opacity(0); 
+                }
+
+                #icon-menu
+                {
+                    @include opacity(0); 
+                    bottom: 55px;  
+                }  
+    
+
+            }            
+        }
+
+    }
+
+}

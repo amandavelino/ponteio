@@ -15,6 +15,9 @@
             
             <section id="internas" class="logo-ctr pdg-page contato-page">
 
+                <?php include("incs/menu.php"); ?>
+                <div id="bg-menu-internas"></div><!-- bg-menu-internas -->
+
                 <div id="boxLogo">
 
                     <div id="logo"></div><!-- logo -->
@@ -39,10 +42,10 @@
                         </fieldset>
 
                         <fieldset>
-                            <label class="width-50">
+                            <label class="columns-2">
                                 <input type="email" name="email_contato" class="input lft" placeholder="E-mail">
                             </label>
-                            <label class="width-50">
+                            <label class="columns-2">
                                 <input id="telefone" type="tel" name="telefone_contato" class="input rgt" onkeypress="mascara(this, '## ####-####')" maxlength="12" placeholder="Telefone">
                             </label>                    
                         </fieldset>     

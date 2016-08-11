@@ -1,7 +1,15 @@
 //importando jquery como dependencia
 $(document).ready(function(){
 
-	//setTimeout(function(){$(".pre-con").hide()},1100);
+	//depois de 1s remover o pre-con*
+	setTimeout(function(){ 
+		$(".pre-con").hide();
+	}, 1000);
+
+	//animacao logo internas
+	setTimeout(function(){
+		$("#boxLogo").addClass('loaded');
+	}, 600);	
 
 	//ao clicar em has-submenu
 	$("li.has-submenu > a").click(function(){
@@ -27,27 +35,7 @@ $(document).ready(function(){
 
 	var liNums = menu.find('li').length;
 	
-	function animarLi(id){
-
-		var tempo = 700;
-		window.setTimeout(function(){
-			menu.find('li:nth-child(' + id + ')').addClass('show');
-			console.log(tempo);
-		},  tempo);	
-		tempo += 50;
-
-	}//
-
-	function moverAnimarLi(id){
-		var tempo = 970;
-		window.setTimeout(function(){
-			menu.find('li:nth-child(' + id + ')').addClass('remove');
-		},  tempo);	
-		tempo -= 50;
-	}//	
-
-	$("#icon-menu a").click(function(){	
-		home.addClass('opened');
+	function animarLi(){
 
 		//depois q o menu desaparecer
 		window.setTimeout(function(){
@@ -81,12 +69,11 @@ $(document).ready(function(){
 
 		window.setTimeout(function(){
 			menu.find("li:nth-child(6)").addClass('show');
-		},  950);									
-		
-		return false;
-	});//onClick
+		},  950);
 
-	close.click(function(){
+	}//
+
+	function moverAnimarLi(){
 
 		$('.link-ativo').removeClass('link-ativo');
 		$('.clicked').removeClass('clicked');
@@ -121,15 +108,47 @@ $(document).ready(function(){
 			logoMenu.removeClass('show');
 			close.removeClass('show');
 			menu.removeClass('show');
-		}, 300);
+		}, 300);	
 
+	}//	
+
+	//menu home
+	$("#home #icon-menu a").click(function(){	
+		$("#logo-menu").css('display','block');
+		$("#close").css('display','block');		
+		home.addClass('opened');									
+		animarLi();
+		return false;
+	});//onClick
+
+	$("#home #close").click(function(){
+		moverAnimarLi();
 		window.setTimeout(function(){
+			$("#logo-menu").css('display','none');
+			$("#close").css('display','none');				
 			home.removeClass('opened');
-		}, 450);		
-
+		}, 450);
 		return false;
 	});
 
+	//menu internas
+	$("#internas #icon-menu a").click(function(){
+		$("#logo-menu").css('display','block');
+		$("#close").css('display','block');
+		$("#internas").addClass('opened');
+		animarLi();									
+		return false;
+	});//onClick
+
+	$("#internas #close").click(function(){
+		moverAnimarLi();
+		window.setTimeout(function(){
+			$("#logo-menu").css('display','none');
+			$("#close").css('display','none');			
+			$("#internas").removeClass('opened');					
+		}, 450);		
+		return false;
+	});
 
 	//O Restaurante
 	$('.owl-carousel').owlCarousel({
@@ -146,11 +165,6 @@ $(document).ready(function(){
 });//
 
 jQuery(window).load(function () {
-
-	//setTimeout(function(){
-	$("#boxLogo").addClass('loaded');
-	//}, 1000);
-
 	//loader para o site
     //$("#loader").delay(1500).fadeOut("slow"); //retire o delay quando for copiar!
     //$(".wrap").fadeIn(450);

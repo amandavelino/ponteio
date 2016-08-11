@@ -15,6 +15,9 @@
             
             <section id="internas" class="logo-ctr">
 
+                <?php include("incs/menu.php"); ?>
+                <div id="bg-menu-internas"></div><!-- bg-menu-internas -->
+
                 <div id="boxLogo">
 
                     <div id="logo"></div><!-- logo -->
