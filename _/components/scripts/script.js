@@ -44,32 +44,32 @@ $(document).ready(function(){
 			logoMenu.addClass('show');
 			close.addClass('show');
 			menu.addClass('show');
-		}, 600);
+		}, 900);
 
 		//animando cada li
 		window.setTimeout(function(){
 			menu.find("li:nth-child(1)").addClass('show');
-		},  700);
+		},  1000);
 
 		window.setTimeout(function(){
 			menu.find("li:nth-child(2)").addClass('show');
-		},  750);
+		},  1050);
 
 		window.setTimeout(function(){
 			menu.find("li:nth-child(3)").addClass('show');
-		},  800);
+		},  1100);
 
 		window.setTimeout(function(){
 			menu.find("li:nth-child(4)").addClass('show');
-		},  850);
+		},  1150);
 
 		window.setTimeout(function(){
 			menu.find("li:nth-child(5)").addClass('show');
-		},  900);		
+		},  1200);		
 
 		window.setTimeout(function(){
 			menu.find("li:nth-child(6)").addClass('show');
-		},  950);
+		},  1250);
 
 	}//
 
