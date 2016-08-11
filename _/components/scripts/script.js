@@ -151,7 +151,7 @@ $(document).ready(function(){
 	});
 
 	//O Restaurante
-	$('.owl-carousel').owlCarousel({
+	$('#owl-restaurante').owlCarousel({
 		autoPlay: true,
 		navigation : false, // Show next and prev buttons
 		loop: true,
@@ -161,6 +161,41 @@ $(document).ready(function(){
 		singleItem:true,
 		transitionStyle : "fade"
 	});
+
+	//Cardápio
+	$('#owl-cardapio').owlCarousel({
+		center: true,
+		autoplayTimeout: 7000,
+		autoPlay: true,
+		nav : true, // Show next and prev buttons
+		loop: true,
+		items: 3,
+		responsive : {
+		    // breakpoint from 0 up
+		    0 : {
+		        items: 1
+		    },
+		    // breakpoint from 480 up
+		    480 : {
+	 			items: 1
+		    },		    
+		    // breakpoint from 768 up
+		    768 : {
+	 			items: 2
+		    },
+		    // breakpoint from 960 up
+		    960 : {
+		    	items: 2
+		    },
+		    // breakpoint from 1200 up
+		    1200 : {
+		    	items: 3
+		    }
+		},	
+		touchDrag: false,
+		lazyLoad: true,
+		navRewind: false
+	});	
 
 });//
 

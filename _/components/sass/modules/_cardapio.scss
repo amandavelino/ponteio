@@ -1,0 +1,45 @@
+#owl-cardapio
+{
+	
+	.item 
+	{
+		@include opacity(.4);
+		@include transition(all, .5s, ease-out, 0s);
+		cursor: pointer;
+
+		&:hover
+		{
+
+			@include opacity(1);
+
+		}
+
+	}
+
+	.owl-prev,
+	.owl-next 
+	{
+		position: absolute;
+		z-index: 30;
+		top: 50%;
+		width: 64px;
+		height: 64px;
+		margin-top: -32px;
+		background: transparent center center no-repeat;
+		border-radius: 0;
+		text-indent: -9999px;
+	}
+
+	.owl-prev
+	{
+		background-image: url("../imgs/left-arrow.png");
+		left: 1%;
+	}
+
+	.owl-next
+	{
+		background-image: url("../imgs/right-arrow.png");
+		right: 1%;
+	}
+
+}

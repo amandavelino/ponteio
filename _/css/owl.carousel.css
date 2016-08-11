@@ -112,13 +112,16 @@
   position: relative;
   min-height: 1px;
   float: left;
-  -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: #000;
+
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 .owl-carousel .owl-item img {
   display: block;
@@ -224,14 +227,26 @@
 
 .owl-theme .owl-controls{
   
-  position: absolute;
+/*  position: absolute;
   width: 100%;
   z-index: 99999;
   bottom: 2%;
   left: 0;
   margin-top:10px;
   text-align:center;
-  -webkit-tap-highlight-color:transparent;
+  -webkit-tap-highlight-color:transparent;*/
+}
+
+.owl-dots
+{
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+    bottom: 2%;
+    left: 0;
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .owl-theme .owl-controls .owl-nav [class*=owl-]

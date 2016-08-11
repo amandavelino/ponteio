@@ -46,7 +46,7 @@
 
                 <div class="lft">
                   
-                    <div id="owl-demo" class="owl-carousel owl-theme">
+                    <div id="owl-restaurante" class="owl-carousel owl-theme">
                      
                         <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>
                         <div class="item"><img src="imgs/temp/temp-01.jpg" border="0"></div>

@@ -14,7 +14,7 @@
     <li class="id-3 has-submenu">
         <a href="#">Cardápio</a>
         <ul class="submenu">
-            <li><a href="#">Carnes</a></li>
+            <li><a href="carnes.php">Carnes</a></li>
             <li><a href="#">Diversos</a></li>
         </ul>
     </li>

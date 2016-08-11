@@ -933,6 +933,45 @@ img {
   bottom: 55px;
 }
 
+/* line 4, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  -moz-transition: all, 0.5s, ease-out, 0s;
+  -o-transition: all, 0.5s, ease-out, 0s;
+  -webkit-transition: all, 0.5s, ease-out, 0s;
+  transition: all, 0.5s, ease-out, 0s;
+  cursor: pointer;
+}
+/* line 10, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 19, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .owl-prev,
+#owl-cardapio .owl-next {
+  position: absolute;
+  z-index: 30;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  background: transparent center center no-repeat;
+  border-radius: 0;
+  text-indent: -9999px;
+}
+/* line 33, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .owl-prev {
+  background-image: url("../imgs/left-arrow.png");
+  left: 1%;
+}
+/* line 39, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .owl-next {
+  background-image: url("../imgs/right-arrow.png");
+  right: 1%;
+}
+
 /* Header */
 /* Mapa  */
 /* line 8, ../components/sass/modules/_localizacao.scss */
