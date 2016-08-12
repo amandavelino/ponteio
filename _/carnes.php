@@ -13,7 +13,7 @@
 
         <div class="wrap">
             
-            <section id="internas" class="logo-ctr">
+            <section id="internas" class="logo-ctr pagina-carnes">
 
                 <?php include("incs/menu.php"); ?>
                 <div id="bg-menu-internas"></div><!-- bg-menu-internas -->

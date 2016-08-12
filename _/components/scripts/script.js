@@ -153,13 +153,15 @@ $(document).ready(function(){
 	//O Restaurante
 	$('#owl-restaurante').owlCarousel({
 		autoPlay: true,
-		nav : false, // Show next and prev buttons
+		nav : true, // Show next and prev buttons
 		loop: true,
 		items: 1,
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		singleItem: true,
-		transitionStyle : "fade"	
+		transitionStyle : "fade",
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn'				
 	});
 
 	$('#owl-cardapio-interna').owlCarousel({
@@ -199,7 +201,7 @@ $(document).ready(function(){
 		},	
 		touchDrag: false,
 		lazyLoad: true,
-		navRewind: false
+		navRewind: false,
 	});	
 
 });//

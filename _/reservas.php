@@ -54,7 +54,7 @@
 
                         <fieldset>
                             <label class="columns-3">
-                                <input type="text" name="data_reservas" id="datepicker" class="input lft" placeholder="Data de reserva">                            
+                                <input type="text" name="data_reservas" id="datepicker" class="input lft datepicker" placeholder="Data de reserva">                            
                             </label>
                             <label class="columns-3">
                                 <select class="select">

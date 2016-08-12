@@ -1,6 +1,7 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="js/pace-load.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.min.js"></script>
 <script src="js/all.js" type="text/javascript" charset="utf-8" async defer></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

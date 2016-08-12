@@ -1,0 +1,41 @@
+[33mcommit c47dc2951fa1dca80f169295341666e0ab78ddaa[m
+Author: Amanda Avelino <amanda_keys@hotmail.com>
+Date:   Fri Aug 12 12:46:18 2016 -0300
+
+    Cardápio interna finalizada.
+
+[33mcommit 60c0f9fa8034b2c8bd7fb8d471b35810fbbe0462[m
+Author: Amanda Avelino <amanda_keys@hotmail.com>
+Date:   Thu Aug 11 19:29:50 2016 -0300
+
+    Corrigindo bug da imagem previous do owl-carousel, blank/flash.
+
+[33mcommit 91d92082c2efaeeffbdb12e801da817037aaf335[m
+Author: Amanda Avelino <amanda_keys@hotmail.com>
+Date:   Thu Aug 11 12:24:37 2016 -0300
+
+    Alteração Tempo do menu espera de 1000ms.
+
+[33mcommit bb3c0b650563f6e0f963cc507efcbc8a7ecd5821[m
+Author: Amanda Avelino <amanda_keys@hotmail.com>
+Date:   Thu Aug 11 12:13:35 2016 -0300
+
+    Finalização do Menu das páginas internas.
+
+[33mcommit 225a29efe6b2761188b9d33be55d4c4148c55a57[m
+Author: Amanda Avelino <amanda_keys@hotmail.com>
+Date:   Wed Aug 10 18:00:35 2016 -0300
+
+    Finalizada as páginas localização, contato e reservas.
+
+[33mcommit 07745f0f263750dca31da3bb29c9e86c27d8e1b0[m
+Author: Amanda Avelino <amanda_keys@hotmail.com>
+Date:   Tue Aug 9 17:33:18 2016 -0300
+
+    Página o restaurante
+
+[33mcommit b3815141e97e1a375db5463db40d2f19fad89329[m
+Author: Amanda Avelino <amanda_keys@hotmail.com>
+Date:   Mon Aug 8 18:04:28 2016 -0300
+
+    Finalização da Home e menu (sem submenu).
