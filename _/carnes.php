@@ -31,12 +31,68 @@
                     
                     <div id="owl-cardapio" class="owl-carousel owl-theme">
                      
-                        <div class="item"><img class="owl-lazy" data-src="imgs/temp/card01.jpg" border="0"></div>
-                        <div class="item"><img class="owl-lazy" data-src="imgs/temp/card02.jpg" border="0"></div>
-                        <div class="item"><img class="owl-lazy" data-src="imgs/temp/card03.jpg" border="0"></div>
-                        <div class="item"><img class="owl-lazy" data-src="imgs/temp/card01.jpg" border="0"></div>
-                        <div class="item"><img class="owl-lazy" data-src="imgs/temp/card02.jpg" border="0"></div>
-                        <div class="item"><img class="owl-lazy" data-src="imgs/temp/card03.jpg" border="0"></div>                        
+                        <div class="item">
+                            <a href="alcatra.php">
+                                <img class="owl-lazy" data-src="imgs/temp/card01.jpg" border="0">
+                                <div class="titulo">
+                                    <h2>Alcatra</h2>
+                                </div><!-- titulo -->
+                                <div class="legenda">
+                                    <h2>Alcatra</h2>
+                                    <p>Extremamente suculenta e macia, é considerada por muitos a rainha das carnes nobres. Dela saem a Maminha e a Picanha.</p>
+                                </div><!-- legenda -->
+                            </a>
+                        </div>
+                        <div class="item">
+                            <img class="owl-lazy" data-src="imgs/temp/card02.jpg" border="0">
+                            <div class="titulo">
+                                <h2>Costela</h2>
+                            </div><!-- titulo -->                            
+                            <div class="legenda">
+                                <h2>Costela</h2>
+                                <p>Extremamente suculenta e macia, é considerada por muitos a rainha das carnes nobres. Dela saem a Maminha e a Picanha.</p>
+                            </div><!-- legenda -->
+                        </div>
+                        <div class="item">
+                            <img class="owl-lazy" data-src="imgs/temp/card03.jpg" border="0">
+                            <div class="titulo">
+                                <h2>Alcatra</h2>
+                            </div><!-- titulo -->                             
+                            <div class="legenda">
+                                <h2>Alcatra</h2>
+                                <p>Extremamente suculenta e macia, é considerada por muitos a rainha das carnes nobres. Dela saem a Maminha e a Picanha.</p>
+                            </div><!-- legenda -->
+                        </div>
+                        <div class="item">
+                            <img class="owl-lazy" data-src="imgs/temp/card01.jpg" border="0">
+                            <div class="titulo">
+                                <h2>Costela</h2>
+                            </div><!-- titulo -->                              
+                            <div class="legenda">
+                                <h2>Costela</h2>
+                                <p>Extremamente suculenta e macia, é considerada por muitos a rainha das carnes nobres. Dela saem a Maminha e a Picanha.</p>
+                            </div><!-- legenda -->
+                        </div>
+                        <div class="item">
+                            <img class="owl-lazy" data-src="imgs/temp/card02.jpg" border="0">
+                            <div class="titulo">
+                                <h2>Alcatra</h2>
+                            </div><!-- titulo -->                              
+                            <div class="legenda">
+                                <h2>Alcatra</h2>
+                                <p>Extremamente suculenta e macia, é considerada por muitos a rainha das carnes nobres. Dela saem a Maminha e a Picanha.</p>
+                            </div><!-- legenda -->
+                        </div>
+                        <div class="item">
+                            <img class="owl-lazy" data-src="imgs/temp/card03.jpg" border="0">
+                            <div class="titulo">
+                                <h2>Costela</h2>
+                            </div><!-- titulo -->                              
+                            <div class="legenda">
+                                <h2>Costela</h2>
+                                <p>Extremamente suculenta e macia, é considerada por muitos a rainha das carnes nobres. Dela saem a Maminha e a Picanha.</p>
+                            </div><!-- legenda -->
+                        </div>                        
                     </div>
 
                 </div><!-- slider-full

@@ -153,13 +153,26 @@ $(document).ready(function(){
 	//O Restaurante
 	$('#owl-restaurante').owlCarousel({
 		autoPlay: true,
-		navigation : false, // Show next and prev buttons
+		nav : false, // Show next and prev buttons
 		loop: true,
 		items: 1,
 		slideSpeed : 300,
 		paginationSpeed : 400,
-		singleItem:true,
-		transitionStyle : "fade"
+		singleItem: true,
+		transitionStyle : "fade"	
+	});
+
+	$('#owl-cardapio-interna').owlCarousel({
+		autoPlay: true,
+		nav : true, // Show next and prev buttons
+		loop: true,
+		items: 1,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem: true,
+		transitionStyle : "fade",
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn'			
 	});
 
 	//Cardápio
@@ -174,18 +187,10 @@ $(document).ready(function(){
 		    // breakpoint from 0 up
 		    0 : {
 		        items: 1
-		    },
-		    // breakpoint from 480 up
-		    480 : {
-	 			items: 1
-		    },		    
+		    },	    
 		    // breakpoint from 768 up
 		    768 : {
 	 			items: 2
-		    },
-		    // breakpoint from 960 up
-		    960 : {
-		    	items: 2
 		    },
 		    // breakpoint from 1200 up
 		    1200 : {

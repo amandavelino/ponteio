@@ -125,6 +125,7 @@
 }
 .owl-carousel .owl-item img {
   display: block;
+  /*height: 100%;*/
   width: 100%;
   -webkit-transform-style: preserve-3d;
 }

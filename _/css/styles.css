@@ -178,8 +178,8 @@ img {
   width: 100%;
   height: 100%;
   z-index: 99;
-  background: #000;
-  background: black;
+  background: #000 url("../imgs/loading.gif") no-repeat center center;
+  background: black url("../imgs/loading.gif") no-repeat center center;
   -moz-transition: all, 0.5s, ease-out, 0s;
   -o-transition: all, 0.5s, ease-out, 0s;
   -webkit-transition: all, 0.5s, ease-out, 0s;
@@ -723,12 +723,12 @@ img {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 675, ../components/sass/_layout.scss */
+/* line 682, ../components/sass/_layout.scss */
 #internas header {
   text-align: center;
   padding: 40px 0;
 }
-/* line 680, ../components/sass/_layout.scss */
+/* line 687, ../components/sass/_layout.scss */
 #internas header h2 {
   color: #fff;
   display: inline-block;
@@ -739,26 +739,26 @@ img {
   padding: 0 10px;
 }
 
-/* line 696, ../components/sass/_layout.scss */
+/* line 703, ../components/sass/_layout.scss */
 .lft {
   width: 60%;
   height: 100%;
   float: left;
   position: relative;
 }
-/* line 703, ../components/sass/_layout.scss */
+/* line 710, ../components/sass/_layout.scss */
 .lft img {
   height: 100%;
 }
 
-/* line 710, ../components/sass/_layout.scss */
+/* line 717, ../components/sass/_layout.scss */
 .rgt {
   width: 40%;
   height: 100%;
   float: right;
   position: relative;
 }
-/* line 713, ../components/sass/_layout.scss */
+/* line 720, ../components/sass/_layout.scss */
 .rgt:before {
   background: #a6171c;
   content: "";
@@ -770,7 +770,7 @@ img {
   margin-top: -150px;
   z-index: 10;
 }
-/* line 728, ../components/sass/_layout.scss */
+/* line 735, ../components/sass/_layout.scss */
 .rgt.pdg p {
   padding: 0 3em;
 }
@@ -944,13 +944,141 @@ img {
   cursor: pointer;
 }
 /* line 10, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item .titulo {
+  width: 95%;
+  height: 100px;
+  padding: 30px 2.5%;
+  position: absolute;
+  bottom: 35px;
+  text-align: center;
+  -moz-transition: all, 0.35s, ease-out, 0s;
+  -o-transition: all, 0.35s, ease-out, 0s;
+  -webkit-transition: all, 0.35s, ease-out, 0s;
+  transition: all, 0.35s, ease-out, 0s;
+}
+/* line 21, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item .titulo h2 {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* line 33, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item .legenda {
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  width: 95%;
+  height: 100px;
+  padding: 30px 2.5%;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all, 0.5s, ease-in-out, 0s;
+  -o-transition: all, 0.5s, ease-in-out, 0s;
+  -webkit-transition: all, 0.5s, ease-in-out, 0s;
+  transition: all, 0.5s, ease-in-out, 0s;
+}
+/* line 46, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item .legenda:before {
+  background: url("../imgs/detail-legenda.png") no-repeat 0px 0px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 34px;
+  height: 203px;
+  margin-top: -101px;
+}
+/* line 59, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item .legenda:after {
+  background: url("../imgs/mais.png") no-repeat center center;
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  margin-left: -14px;
+}
+/* line 71, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item .legenda h2 {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* line 82, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item .legenda p,
+#owl-cardapio .item .legenda a p {
+  color: #fff;
+}
+/* line 90, ../components/sass/modules/_cardapio.scss */
 #owl-cardapio .item:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 19, ../components/sass/modules/_cardapio.scss */
+/* line 95, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item:hover .titulo {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 100, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .item:hover .legenda {
+  bottom: 40px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+/* line 115, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio-interna .item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 122, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio-interna .item .rgt {
+  width: 40%;
+  height: 100%;
+  float: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 134, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio-interna .legenda {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 80%;
+  height: 150px;
+  margin-top: -75px;
+}
+/* line 144, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio-interna .legenda h2 {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 164, ../components/sass/modules/_cardapio.scss */
 #owl-cardapio .owl-prev,
-#owl-cardapio .owl-next {
+#owl-cardapio .owl-next,
+#owl-cardapio-interna .owl-prev,
+#owl-cardapio-interna .owl-next {
   position: absolute;
   z-index: 30;
   top: 50%;
@@ -961,13 +1089,15 @@ img {
   border-radius: 0;
   text-indent: -9999px;
 }
-/* line 33, ../components/sass/modules/_cardapio.scss */
-#owl-cardapio .owl-prev {
+/* line 178, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .owl-prev,
+#owl-cardapio-interna .owl-prev {
   background-image: url("../imgs/left-arrow.png");
   left: 1%;
 }
-/* line 39, ../components/sass/modules/_cardapio.scss */
-#owl-cardapio .owl-next {
+/* line 184, ../components/sass/modules/_cardapio.scss */
+#owl-cardapio .owl-next,
+#owl-cardapio-interna .owl-next {
   background-image: url("../imgs/right-arrow.png");
   right: 1%;
 }
